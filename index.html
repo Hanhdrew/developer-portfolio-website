@@ -15,16 +15,16 @@
   <body>
     <header>
       <h1>Andrew Rebbe</h1>
-      <nav>
+      <button id="nav-btn" class="nav-btn-style">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <nav id="nav-menu">
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Projects</a></li>
           <li><a href="">Contact</a></li>
         </ul>
-        <button id="nav-btn" class="nav-btn-style">
-          <i class="fa-solid fa-bars"></i>
-        </button>
       </nav>
     </header>
 
@@ -36,7 +36,7 @@
           <p>Andrew</p>
           <h2>Fullstack Web Developer</h2>
           <div class="hero-header-btn-wrapper">
-            <a href="#contact-form" class="btn-style">Quick Connect</a>
+            <a href="#contact-form" class="btn-style">Contact Now</a>
             <button id="resume-btn" class="btn-style">My resume</button>
           </div>
         </div>
@@ -200,8 +200,10 @@
           <div class="project-card-wrapper">
             <div class="project-card project-card-two"></div>
             <div class="project-card">
-              <h5>Front Website</h5>
-              <div class="card-wrapper"><span>HTML</span><span>CSS</span></div>
+              <h5>Command Line Application</h5>
+              <div class="card-wrapper">
+                <span>Node.js</span><span>Javascript</span>
+              </div>
               <p>
                 A clean, responsive website built with HTML and CSS, leveraging
                 Flexbox for precise layout control across all devices. Designed
@@ -220,7 +222,7 @@
           <div class="project-card-wrapper">
             <div class="project-card project-card-three"></div>
             <div class="project-card">
-              <h5>Social Media Landing Page</h5>
+              <h5>Social Media Landing Page - Frontend</h5>
               <div class="card-wrapper">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span>
               </div>
@@ -243,7 +245,7 @@
           <div class="project-card-wrapper">
             <div class="project-card project-card-four"></div>
             <div class="project-card">
-              <h5>Mood Journal API</h5>
+              <h5>Mood Journal API - Fullstack</h5>
               <div class="card-wrapper">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span
                 ><span>SQL</span><span>Node.js</span>
@@ -268,7 +270,7 @@
           <div class="project-card-wrapper">
             <div class="project-card project-card-five"></div>
             <div class="project-card">
-              <h5>Title here</h5>
+              <h5>Login Register Page with User & Admin - Fullstack</h5>
               <div class="card-wrapper">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span
                 ><span>Another</span>
@@ -311,6 +313,7 @@
             </div>
           </div>
         </div>
+        <a href="./pages/projects.html">View All</a>
       </section>
 
       <section class="contact-section">
@@ -375,5 +378,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="./scripts.js/email.js"></script>
     <script src="./scripts.js/effects.js"></script>
+    <script src="scripts.js/script.js"></script>
   </body>
 </html>

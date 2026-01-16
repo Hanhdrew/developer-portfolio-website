@@ -132,6 +132,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: var(--padding-medium);
+  position: relative;
 }
 
 h1 {
@@ -139,9 +140,24 @@ h1 {
   font-weight: var(--weight-normal);
 }
 
-nav ul {
+#nav-menu {
   display: none;
-  gap: var(--gap-small);
+}
+
+#nav-menu.open {
+  display: flex;
+  position: absolute;
+  right: 12px;
+  top: 95%;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--clr-background-semi);
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .nav-btn-style {
@@ -443,6 +459,15 @@ nav ul {
   border-radius: 15px;
 }
 
+.projects-section a {
+  margin: 10px;
+  background-color: var(--clr-background-solid);
+  font-size: var(--text-large);
+  padding: 5px 10px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
 /* project card backgrounds */
 
 .project-card-one {
@@ -548,11 +573,17 @@ footer h6 {
 /* 768px-1023px tablet */
 
 @media (min-width: 768px) {
-  header nav ul {
-    display: flex;
-  }
-  header nav button {
+  header button {
     display: none;
+  }
+
+  #nav-menu {
+    display: block !important;
+  }
+
+  header ul {
+    flex-direction: row;
+    background-color: transparent;
   }
 
   .hero-section {
